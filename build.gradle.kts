@@ -152,7 +152,8 @@ tasks {
         )
         archiveClassifier.set("dev-all")
 
-        exclude("kotlin/**", "kotlinx/**", "javax/**", "META-INF")
+        //include("META-INF")
+        exclude("kotlin/**", "kotlinx/**", "javax/**")
         exclude("org/checkerframework/**", "org/intellij/**", "org/jetbrains/annotations/**")
         exclude("com/google/gson/**")
         exclude("net/kyori/**")
